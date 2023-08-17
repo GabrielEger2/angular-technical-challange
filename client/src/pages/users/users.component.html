@@ -1,0 +1,74 @@
+<div class="pl-[340px] p-10 w-screen flex justify-center h-screen">
+    <div class="card lg:card-side bg-base-100 w-full shadow-xl">
+        <div class="card-body">
+          <h2 class="card-title">Página de Usuários!</h2>
+          <div class="pt-10 flex-col">
+            <div class='w-full flex input-group'>
+                <input type="text" placeholder="Procure por Nome ou E-mail" class="input input-bordered w-full max-w-xs" />
+                <select class="select select-bordered">
+                    <option>Todos</option>
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                </select>
+            </div>
+            <div class="flex justify-between pt-12">
+                <div class="w-[70%] border-r border-blue-500">
+                    <div class="overflow-x-auto">
+                        <table class="table table-zebra">
+                          <thead>
+                            <tr>
+                              <th>ID</th>
+                              <th>Nome</th>
+                              <th>E-mail</th>
+                              <th>Gênero</th>
+                              <th>Status</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr *ngFor="let user of users">
+                                <td>{{ user.id }}</td>
+                                <td>{{ user.name }}</td>
+                                <td>{{ user.email }}</td>
+                                <td>{{ user.gender }}</td>
+                                <td>{{ user.status }}</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                </div>
+                <form class="w-[30%] h-28 pl-4">
+                    <div class="flex w-full h-full items-center">
+                        <button class="grid w-20 h-20 card bg-gray-100 rounded-box place-items-center">content</button> 
+                        <div class="divider lg:divider-horizontal"></div> 
+                        <button class="grid w-20 h-20 card bg-gray-100 rounded-box place-items-center">content</button>
+                    </div>
+                    <p class="text-primary font-bold py-2">
+                        Nome:
+                    </p>
+                    <input type="text" placeholder="Ex. João" class="input input-bordered w-full" />
+                    <p class="text-primary font-bold py-2">
+                        E-mail:
+                    </p>
+                    <input type="text" placeholder="Ex. joão@gmail.com" class="input input-bordered w-full" />
+                    <p class="text-primary font-bold py-2">
+                        Gênero:
+                    </p>
+                    <select class="select select-bordered w-full">
+                        <option disabled>Sexo</option>
+                        <option>Masculino</option>
+                        <option>Feminino</option>
+                    </select>
+                    <p class="text-primary font-bold py-2">
+                        Ativo:
+                    </p>
+                    <input type="checkbox" checked="checked" class="checkbox checkbox-primary" />
+                    <div class="flex justify-end space-x-2">
+                        <button class="btn btn-primary text-primary bg-gray-50 hover:bg-gray-200">Cancelar</button>
+                        <button class="btn btn-primary text-gray-50">Criar</button>
+                    </div>
+                </form>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
