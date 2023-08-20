@@ -26,7 +26,7 @@ export class PostsService {
   }
 
   updatePost(id: any, post: postModel): Observable<any>{
-    return this.http.put(`${this.apiUrl}/posts/`.concat(id), { headers });
+    return this.http.patch(`${this.apiUrl}/posts/`.concat(id), post, { headers });
   }
 
   deletePost(id: any){
