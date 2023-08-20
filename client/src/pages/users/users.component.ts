@@ -15,7 +15,6 @@ export class UsersComponent implements OnInit {
   selectedUserIndex: number | null = null;
 
   filterText: string = '';
-  filterGender: string = 'Todos';
   filteredUsers: Array<any> = [];
 
   constructor(private usersService: UsersService) {}

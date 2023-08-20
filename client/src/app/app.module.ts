@@ -11,13 +11,15 @@ import { HomeComponent } from 'src/pages/home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { UsersService } from 'src/pages/users/users.service';
+import { PostsComponent } from 'src/pages/posts/posts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     HomeComponent,
-    UsersComponent
+    UsersComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,

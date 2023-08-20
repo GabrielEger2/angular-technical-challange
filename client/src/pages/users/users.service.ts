@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { UserModel } from './user.model';
 
 const headers = new HttpHeaders({
-  'Authorization': 'Bearer 9194fcdfed97d89830ec71f1a54d9bc845270965a2c940c31062782ee90689d3'
+  'Authorization': 'Bearer d4777b73dbfeec433c39d9694f0966bd39352ebbdf96c6bbb55dc06e73b52abd'
 });
 
 @Injectable({
