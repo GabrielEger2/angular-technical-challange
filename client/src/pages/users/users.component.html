@@ -33,12 +33,12 @@
                     </div>
                     <form class="lg:w-[30%] pb-10 lg:h-28 pl-4">
                         <div class="flex w-full justify-center space-x-4 lg:space-x-0 lg:justify-normal h-full items-center">
-                            <button class="grid w-16 h-16 card bg-gray-100 rounded-box place-items-center">
+                            <button (click)="fetchUsers()" class="grid w-16 h-16 card bg-gray-100 rounded-box place-items-center">
                                 <fa-icon class="text-primary" size="xl" [icon]="faRotateRight"></fa-icon>
                             </button> 
                             <div class="divider lg:divider-horizontal"></div> 
-                            <button class="grid w-16 h-16 card bg-gray-100 rounded-box place-items-center">
-                                <fa-icon (click)="removeUser(user.id)" class="text-primary" size="xl" [icon]="faTrashCan"></fa-icon>
+                            <button (click)="removeUser(user.id)" class="grid w-16 h-16 card bg-gray-100 rounded-box place-items-center">
+                                <fa-icon class="text-primary" size="xl" [icon]="faTrashCan"></fa-icon>
                             </button>
                         </div>
                         <p class="text-primary font-bold py-2">
